@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pomy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0036-tenant/tkrw-pr714-0075-0036-app/devfile-sample-pomy@sha256:07b40d7708004fba2cba9c8bc38ad96e8b8103358f069751f537d701bf14704c
+        name: my-nodejs
+        resources: {}
+status: {}
